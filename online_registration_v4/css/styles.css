@@ -1,0 +1,174 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+/********* Progress bar **************/
+#progressbar{
+  width: 95%;
+  background-color: #E8E8E8;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: .7;
+}
+#bar{
+  width: 1%;
+  height: 30px;
+  background-color: lightblue;
+  display: none;
+  border-radius: 15px;
+  opacity: .7;
+}
+
+ /************body and main elements*****************/
+body {
+ margin: 0px;
+ font-family: 'Merriweather', serif;
+}
+fieldset{
+  border: none;
+}
+header{
+  background-color: #2B3856;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+legend{
+  color: black;
+  font-size: 1.2em;
+}
+header h1{
+  margin: 0px;
+  padding: 25px;
+  font-size: 1em;
+}
+
+#maintext{
+  text-align: center;
+}
+#topline{
+  width: 90%;
+  height: 5px;
+  background-color: #2B3856;
+  margin-bottom: 0px;
+}
+#bottomline{
+  width: 90%;
+  height: 5px;
+  background-color: grey;
+  margin-top: 2px;
+  margin-bottom: 25px;
+}
+
+form{
+  text-align: left;
+
+  color: grey;
+}
+input{
+  background-color: #E8E8E8;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+input:focus{
+  border: 3px solid darkgrey;
+}
+input[type="text"]{
+  width: 95%;
+  height:40px;
+
+}
+input[type="email"]{
+  height:40px;
+  width: 95%;
+}
+input[type="number"]{
+  height:40px;
+  width: 95%;
+}
+input[type="tele"]{
+  height:40px;
+  width: 95%;
+}
+
+
+#zip{
+  width: 45%;
+}
+
+input[type="checkbox"]{
+
+}
+
+input[type="submit"]{
+ background-color: #7FFFD4;
+ color: white;
+ width: 100%;
+ text-align: center;
+ height:42px;
+ font-size: 1em;
+ margin: 20px 0px 0px 0px;
+
+
+}
+select{
+  width: 90%;
+  background-color: lightgrey;
+  height:32px;
+  color: grey;
+}
+
+#textarea{
+  height: 100px;
+  width: 100%;
+}
+#fullname{
+  text-align: right;
+  color: grey;
+}
+#email{
+  text-align: right;
+  color: grey;
+}
+
+
+/*********************** Screen size for ipad *********************/
+
+
+@media screen and (min-width: 768px) {
+ .flex{
+   padding-left: 25%;
+   padding-right: 25%;
+
+ }
+
+ #topline{
+   width: 99%;
+ }
+  #bottomline{
+    width: 99%;
+  }
+
+  #info p{
+    display: inline-block;
+    width: 30%;
+  }
+  #zip{
+    width: 35%;
+  }
+  #fullname,
+  #email,
+  #phoneNumber,
+  #streetNumber,
+  #city{
+    width: 69%;
+  }
+  #info select{
+    width: 69%;
+  }
+  #progressbar{
+    width: 100%;
+  }
+}
