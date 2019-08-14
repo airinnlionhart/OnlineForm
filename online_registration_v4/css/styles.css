@@ -4,7 +4,7 @@
 }
 /********* Progress bar **************/
 #progressbar{
-  width: 95%;
+  width: 100%;
   background-color: #E8E8E8;
   border-radius: 15px;
   margin-top: 10px;
@@ -147,6 +147,11 @@ select{
   font-size: .6em;
   color: lightgrey;
 }
+.checks{
+  display: inline-block;
+  margin: 5px;
+  margin-right: 2px;
+}
 label{
   display: inline-block;
   margin-top: 16px;
@@ -161,6 +166,7 @@ input:focus{
   border-bottom: 3px solid blue;
   opacity: .4
 }
+
 
 
 /*********************** Screen size for ipad *********************/
